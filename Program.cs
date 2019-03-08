@@ -2,38 +2,96 @@
 
 namespace Todos
 {
+
+    /*
+        Implement the appropriate methods in the TodoList class to
+        make the code in Main() work.
+
+        Tip: Work incrementally and methodically. 
+             Do NOT try to write the code all at once.
+             TEST ALONG THE WAY.
+
+             Work down the Main() method, uncommenting code as you implement
+             the methods in the TodoList class.
+     */
+
+
     class Program
     {
         static void Main()
         {
-            Todo dishes = new Todo();
-            dishes.Text = "Wash the dishes";
-            dishes.IsComplete = false;
-            dishes.DueDate = new DateTime(2019, 3, 6);
+            TodoList todoList = new TodoList();
 
-            //dishes.PrintTodo();
-            //Console.WriteLine($"Todo: {dishes.Text} IsComplete: {dishes.IsComplete}");
-            Console.WriteLine(dishes);
-            dishes.SetSecret("This is a secret");
-            Console.WriteLine(dishes);
+/*
+            // Add some less important things...
+            todoList.AddLeastPriorityTodo(
+                new Todo() {
+                    Text = "Take clothes to Goodwill",
+                    DueDate = DateTime.Today.AddDays(7)
+                }
+            );
+            todoList.AddLeastPriorityTodo(
+                new Todo() {
+                    Text = "Help friend move",
+                    DueDate = DateTime.Today.AddDays(14)
+                }
+            );
 
-            Object obj = new Object();
-            obj.ToString();
+            // Add some more important things...
+            todoList.AddTopPriorityTodo(
+                new Todo() {
+                    Text = "Do laundry",
+                    DueDate = DateTime.Today.AddDays(1)
+                }
+            );
+            todoList.AddTopPriorityTodo(
+                new Todo() {
+                    Text = "Clean house",
+                    DueDate = DateTime.Today
+                }
+            );
+
+            // Print a report of Todos
+            Console.WriteLine("All Todos");
+            Console.WriteLine("---------");
+
+            todoList.PrintAll();
+
+            Console.WriteLine("---------");
+            Console.WriteLine();
 
 
-            Todo laundry = new Todo();
-            //laundry.Text = "Wash the clothes";
-            //laundry.PrintTodo();
-            //Console.WriteLine($"Todo: {laundry.Text} IsComplete: {laundry.IsComplete}");
+            // Print some individual Todos:
 
-            Todo lawn = new Todo();
-            //lawn.PrintTodo();
-            //Console.WriteLine($"Todo: {lawn.Text} IsComplete: {lawn.IsComplete}");
+            // Should be "Help friend move"
+            Todo helpMove = todoList.GetElementAt(3);
+            Console.WriteLine(helpMove);
 
-/* 
-            if (lawn.Text == null) {
-                Console.WriteLine("It's null!!!!");
-            }*/
+            bool includeComplete = false;
+            Todo cleanHouse = todoList.GetTopPriorityTodo(includeComplete);
+            Console.WriteLine(cleanHouse);
+
+            cleanHouse.IsComplete = true;
+            Console.WriteLine(cleanHouse);
+
+            // Now the top, INCOMPLETE priority todo is laundry
+            Todo laundry = todoList.GetTopPriorityTodo(includeComplete);
+            Console.WriteLine(laundry);
+
+            Todo randomTodo = todoList.GetRandomTodo();
+            Console.WriteLine(randomTodo);
+
+
+            // Print a report of incomplete Todos
+            // Should be everything except "Clean House"
+            Console.WriteLine();
+            Console.WriteLine("Incomplete Todos");
+            Console.WriteLine("---------");
+
+            todoList.PrintIncomplete();
+
+            Console.WriteLine("---------");
+*/
         }
     }
 }

@@ -4,23 +4,25 @@ namespace Todos
 {
     public class Todo
     {
-        public string Text {get; set;} = "";
-        public bool IsComplete  {get; set;} = true;
+        public string Text {get; set;}
+        public bool IsComplete  {get; set;}
         public DateTime DueDate {get; set;}
 
-        private string Secret {get; set;} = "Tell no one!";
+        public Todo() {
+            Text = "";
+            IsComplete = false;
+            DueDate = DateTime.Today;
+        }
 
         public void PrintTodo() {
-            Console.WriteLine($"Todo: {Text} IsComplete: {IsComplete} Due: {DueDate}");
+            Console.WriteLine($"Todo: {Text} IsComplete: {IsComplete} Due: {DueDate.ToShortDateString()}");
         }
 
         public string AsStringRepresentation() {
-            Console.WriteLine("Inside AsStringRepresentation()");
-            return $"Todo: {Text} done? {IsComplete} due on: {DueDate} Shh...{Secret}";
+            return $"Todo: {Text}. Done? {IsComplete}. Due on: {DueDate.ToShortDateString()}";
         }
 
         public override string ToString() {
-            Console.WriteLine("Inside ToString()");
             string result = AsStringRepresentation();
             return result;
 
@@ -28,10 +30,6 @@ namespace Todos
             //  method. I would just have the following code in the ToString() method:
 
             // return $"Todo: {Text} done? {IsComplete} due on: {DueDate} Shh...{Secret}";
-        }
-
-        public void SetSecret(string newSecret) {
-            Secret = newSecret;
         }
     }
 }
