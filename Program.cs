@@ -7,12 +7,12 @@ namespace Todos
         Implement the appropriate methods in the TodoList class to
         make the code in Main() work.
 
-        Tip: Work incrementally and methodically. 
+        Tip: Work incrementally and methodically.
              Do NOT try to write the code all at once.
              TEST ALONG THE WAY.
 
              Below you'll find sections of commented coode.
-             Uncomment one section at a time and write the 
+             Uncomment one section at a time and write the
              code in TodoList.cs to make that section of code work.
      */
 
@@ -52,7 +52,7 @@ Todo: Help friend move. Done? False. Due on: 3/22/19
         {
             TodoList todoList = new TodoList();
 
-/*
+
             // Add some less important things...
             todoList.AddLeastPriorityTodo(
                 new Todo() {
@@ -66,7 +66,7 @@ Todo: Help friend move. Done? False. Due on: 3/22/19
                     DueDate = DateTime.Today.AddDays(14)
                 }
             );
-*/
+
 
 /*
             // Add some more important things...
@@ -96,7 +96,7 @@ Todo: Help friend move. Done? False. Due on: 3/22/19
 */
 
 
-/* 
+/*
             // Print some individual Todos:
 
             // Should be "Help friend move"
@@ -104,7 +104,7 @@ Todo: Help friend move. Done? False. Due on: 3/22/19
             Console.WriteLine(helpMove);
 */
 
-/* 
+/*
             bool includeComplete = false;
             Todo cleanHouse = todoList.GetTopPriorityTodo(includeComplete);
             Console.WriteLine(cleanHouse);
@@ -117,7 +117,7 @@ Todo: Help friend move. Done? False. Due on: 3/22/19
             Console.WriteLine(laundry);
 */
 
-/* 
+/*
             // Print a report of incomplete Todos
             // Should be everything except "Clean House"
             Console.WriteLine();
@@ -130,7 +130,7 @@ Todo: Help friend move. Done? False. Due on: 3/22/19
             Console.WriteLine();
 */
 
-/* 
+/*
             Todo randomTodo = todoList.GetRandomTodo();
             Console.WriteLine("A random todo");
             Console.WriteLine(randomTodo);
