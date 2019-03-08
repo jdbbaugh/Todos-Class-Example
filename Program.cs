@@ -12,7 +12,7 @@ namespace Todos
              TEST ALONG THE WAY.
 
              Below you'll find sections of commented coode.
-             Uncomment one section at a time and make write the 
+             Uncomment one section at a time and write the 
              code in TodoList.cs to make that section of code work.
      */
 
