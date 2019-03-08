@@ -68,7 +68,7 @@ Todo: Help friend move. Done? False. Due on: 3/22/19
             );
 
 
-/*
+
             // Add some more important things...
             todoList.AddTopPriorityTodo(
                 new Todo() {
@@ -82,7 +82,7 @@ Todo: Help friend move. Done? False. Due on: 3/22/19
                     DueDate = DateTime.Today
                 }
             );
-*/
+
 
 /*
             // Print a report of Todos
@@ -93,7 +93,7 @@ Todo: Help friend move. Done? False. Due on: 3/22/19
 
             Console.WriteLine("---------");
             Console.WriteLine();
-*/
+ */
 
 
 /*
