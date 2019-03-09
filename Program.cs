@@ -84,7 +84,7 @@ Todo: Help friend move. Done? False. Due on: 3/22/19
             );
 
 
-/*
+
             // Print a report of Todos
             Console.WriteLine("All Todos");
             Console.WriteLine("---------");
@@ -93,18 +93,18 @@ Todo: Help friend move. Done? False. Due on: 3/22/19
 
             Console.WriteLine("---------");
             Console.WriteLine();
- */
 
 
-/*
+
+
             // Print some individual Todos:
 
             // Should be "Help friend move"
             Todo helpMove = todoList.GetElementAt(3);
             Console.WriteLine(helpMove);
-*/
 
-/*
+
+
             bool includeComplete = false;
             Todo cleanHouse = todoList.GetTopPriorityTodo(includeComplete);
             Console.WriteLine(cleanHouse);
@@ -115,7 +115,7 @@ Todo: Help friend move. Done? False. Due on: 3/22/19
             // Now the top, INCOMPLETE priority todo is laundry
             Todo laundry = todoList.GetTopPriorityTodo(includeComplete);
             Console.WriteLine(laundry);
-*/
+
 
 /*
             // Print a report of incomplete Todos
