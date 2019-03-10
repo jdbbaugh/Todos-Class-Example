@@ -16,6 +16,21 @@ namespace Todos
             return PriorityList[num];
         }
 
+        public void PrintIncomplete() {
+            foreach(Todo item in PriorityList) {
+                if (item.IsComplete == false) {
+                    Console.WriteLine(item);
+                }
+            }
+        }
+
+        public Todo GetRandomTodo() {
+            // Console.WriteLine($"this is {}");
+            Random rand = new Random();
+            int randomNum = rand.Next(PriorityList.Count);
+            return PriorityList[randomNum];
+        }
+
 
         // Add a new todo to the front of the todo list
         public void AddTopPriorityTodo(Todo todo) {
@@ -50,7 +65,5 @@ namespace Todos
             }
 
         }
-
-
     }
 }

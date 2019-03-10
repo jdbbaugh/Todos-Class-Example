@@ -117,7 +117,7 @@ Todo: Help friend move. Done? False. Due on: 3/22/19
             Console.WriteLine(laundry);
 
 
-/*
+
             // Print a report of incomplete Todos
             // Should be everything except "Clean House"
             Console.WriteLine();
@@ -128,13 +128,13 @@ Todo: Help friend move. Done? False. Due on: 3/22/19
 
             Console.WriteLine("---------");
             Console.WriteLine();
-*/
 
-/*
+
+
             Todo randomTodo = todoList.GetRandomTodo();
             Console.WriteLine("A random todo");
             Console.WriteLine(randomTodo);
-*/
+
         }
     }
 }
